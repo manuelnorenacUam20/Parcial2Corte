@@ -1,0 +1,99 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.tareas {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    width: 700px;
+    height: 500px;
+    border: black solid 2px;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    border-radius: 20px;
+    border: orangered solid 2px;
+}
+
+.form input select {
+    padding: 10px;
+    border-radius: 10px;
+    border: orangered solid 2px;
+}
+
+.form button {
+    padding: 10px;
+    border-radius: 10px;
+    border: orangered solid 2px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tareas div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.done {
+    border: green solid 2px;
+    width: 400px;
+    height: 200px;
+}
+
+.off {
+    border: red solid 2px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.done p{
+    border: green solid 2px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.off p{
+    border: red solid 2px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.mc{
+    border: solid;
+}
+
+
+@media all and (orientation: portrait) {
+  #contenedor {
+    display: none;
+  }
+
+  #vertical {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: url(img/vertical.png);
+    background-size: cover;
+  }
+}

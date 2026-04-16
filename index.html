@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <!-- Adiciono la hoja de estilos -->
+    <link rel="stylesheet" href="style.css" media="">
 </head>
+
 <body>
-    
+    <div id="container" class="contenedor">
+        <div id="tareas" class="tareas">
+            <!-- Formulario para creacion de tareas -->
+            <form onsubmit="crearTarea(); return false;" class="form">
+                <!-- Input de ingreso que referencia la clave de la tarea -->
+                <input type="number" id="clave" placeholder="clave" required>
+                <!-- Input de ingreso que referencia el nombre de la tarea -->
+                <input type="text" id="nombreTarea" placeholder="nombre tarea" required>
+                <!-- Boton para llamar la accion del formulario -->
+                <button type="submit">AGREGAR</button>
+            </form>
+            <div>
+                <h2>ZONA DE ARRASTRE</h2>
+                <!-- seccion para el apartdado de tareas completadas -->
+                <section id="completado" class="done">
+
+                </section>
+                <!-- seccion para el apartado de tareas pendientes -->
+                <section id="pendiente" class="off">
+
+                </section>
+            </div>
+        </div>
+        <!-- grilla para manejar la aparicion de tareas -->
+        <canvas class="mc" id="miCanvas" width="500" height="150px"> </canvas>
+    </div>
+    <!-- Adiciono el componente que maneja la logica del sitio -->
+    <script src="app.js"></script>
 </body>
+
 </html>
